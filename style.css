@@ -1,0 +1,130 @@
+:root {
+    --bg-color: rgb(240, 240, 240);
+}
+
+div {
+    border: solid black px;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url("./assets/Norse-Bold.otf");
+}
+
+html,
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    display: flex;
+    background-image: url('./assets/madison-kuhn-svBAucLerfk-unsplash.jpg');
+    align-items: center;
+    user-select: none;
+}
+
+.left>.odin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 40%;
+    font-family: odinFont;
+    font-size: 150px;
+    color: white;
+}
+
+.odin-container>img {
+    height: 90%;
+}
+
+.right {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.right>.top {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    font-size: 25px;
+    background-color: var(--bg-color);
+}
+
+.right>.top>:last-child {
+    align-self: flex-start;
+    margin-left: 22%;
+}
+
+.right>.mid {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: 100px 100px;
+    gap: 5px 300px;
+    width: 100%;
+    height: 40%;
+    padding-left: 25px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    border: 1px solid black;
+}
+
+input:focus {
+    border: solid blue 1px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    user-select: none;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.right>.bottom {
+    width: 100%;
+    height: 30%;
+    background-color: var(--bg-color);
+}
+
+.right>.bottom>div {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.button {
+    background-color: rgb(108, 179, 212);
+    color: rgb(22, 35, 41);
+    border-radius: 10px;
+    user-select: none;
+}
+
+.create-account-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
